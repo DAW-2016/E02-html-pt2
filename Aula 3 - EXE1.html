@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<link rel="stylesheet" type="text/css" href="stylesheet.css">
+			<title>EXE1</title>
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+			<script type="text/javascript">// <![CDATA[
+			$(document).ready(function() {
+			function filterPath(string) {
+			return string
+			.replace(/^\//,'')
+			.replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+			.replace(/\/$/,'');
+			}
+			$('a[href*=#]').each(function() {
+			if ( filterPath(location.pathname) == filterPath(this.pathname)
+			&& location.hostname == this.hostname
+			&& this.hash.replace(/#/,'') ) {
+			var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+			var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+			if ($target) {
+			var targetOffset = $target.offset().top;
+			$(this).click(function() {
+			$('html, body').animate({scrollTop: targetOffset}, 1000);
+			return false;
+			});
+			}
+			}
+			});
+			});
+				</script>
+		</head>
+		<body style="margin-right: 320px">
+			<header>
+				<h1>Manual de referência para HTML</h1>
+			</header>
+				<div style="border: 2px solid black; width: 300px; height:200px; text-align: left; position: fixed; left: 1040px;">
+					<h3 id="tituloIndice">Índice</h3>
+						<ul>
+							<li><a class="indice" href="#intro">HTML: Introdução e estrutura básica</a></li>
+							<li><a class="indice" href="#texto">Elementos de texto</a></li>
+							<li><a class="indice" href="#container">Elementos containers</a></li>
+							<li><a class="indice" href="#forms">Elementos formulários</a></li>
+							<li><a class="indice" href="#multimedia">Elementos multimedia</a></li>
+							<li><a class="indice" href="#bibliografica">Referência bibliográfica</a></li>
+						</ul>
+				</div>
+				<h3><a name="intro"/>HTML: Introdução e estrutura básica</h3>
+					<p>HTML significa: HyperText Markup Language. HTML é uma linguagem voltada para marcação/estruturação de documentos da web.</p>
+					<p>Existem vários recursos para cada tipo de coisa que se deseja criar em HTML. Essas coisas são chamadas de tag. Funções predefinidas que usamos para construir nossa página, como cabeçalhos, parágrafos, listas, tabelas, imagens e links.</p>
+					<p>Toda tag é composta de nome, atributos e valor, como no exemplo: <a href="http://www.google.com" target="_blank">Clique aqui</a> (Clique com o botão direito sobre o link e em seguida clique em inspecionar elemento para identificar a sintaxe da tag).</p>
+
+				<h3>HTML: Principais elementos</h3>
+					<ul>
+						<li><a name="texto"/>Elementos de texto: são os elementos que cuidam da estruturação textual da página</li>
+						<ul>
+							<li>Headings: Utilizado para definir títulos, subtítulos e seções.</li>
+								<p>Exemplo: "h1","h2","h3"... Veja abaixo:</p>
+									<h1>h1</h1>
+									<h2>h2</h2>
+									<h3>h3</h3>
+							<li>Parágrafos: estrutura que armazena grandes blocos de texto.</li>
+								<p>Exemplo: "p". Veja abaixo:</p>
+									<p>Isso é um parágrafo :)</p>
+							<li>Formatação: oferece diferentes aspectos para um texto, como deixá-lo negrito ou itálico.</li>
+								<p>Exemplo: "em","strong"... Veja abaixo:</p>
+									<p>Texto em <strong>Negrito</strong> ou em <em>Itálico</em></p>
+							<li>Listas: Como o próprio nome já diz a lista tem a função de listar/enumerar as coisas de forma ordenada ou não ordenada</li>
+								<p>Exemplo: "ol","ul". Veja abaixo:</p>
+									<ol>
+										<li>Ordenada</li>
+										<li>Ordenada</li>
+										<li>Ordenada</li>
+										<li>Ordenada</li>
+									</ol>
+									<p></p>
+									<ul>
+										<li>Não ordenada</li>
+										<li>Não ordenada</li>
+										<li>Não ordenada</li>
+										<li>Não ordenada</li>
+									</ul>			
+						</ul>
+						<li><a name="container"/>Elementos containers: são usados para agrupar outros elementos HTML, como os "Elementos de texto" vistos acima.</li>
+						<ul>
+							<li>Head: Cabeçalho onde são armazenadas informações da página.</li>
+								<p>Exemplo: title, css, meta...</p>
+							<li>Body: O corpo do HTML. Dentro dele se encontra todo o conteúdo da página.</li>
+								<p>Exemplo: Tags como p, h1, h2, ol, ul... Todas são usadas dentro do "body".</p>
+							<li>Div: Tag usada para agrupar elementos em um espaço determinado</li>
+								<p>Exemplo: Veja o exemplo do uso de divs abaixo.</p>
+								<div style="border: 3px dashed red">  
+									<p>Este é o painel principal. Ele contém o  texto principal da sua página web.</p> 
+								</div>
+								
+							<li>Header e Footer: divs usadas em ocasiões especiais que preenchem o cabeçalho e o rodapé da página, respectivamente</li>
+								<p>O título desta página (Manual de referência para HTML) está entre a tag header.</p>
+								<p>No final da página temos o rodapé feito com a tag footer.</p>
+								
+						</ul>
+						<li><a name="forms"/>Elementos formulários: mecanismo de comunicação básica entre usuário e aplicação web</li>
+						<ul>
+							
+							<li>Input: texto, senhas, checkbox, radio buttons, botão submit e botão reset</li>
+								<p>Veja um exemplo inicial:</p>
+								<form>  
+								Username: <input type="text" name="Login"/>   
+								Password: <input type="password" name="Senha"/>   
+									  	  <input type="submit" value="Entrar"/>
+								</form>
+							<li>Select: listbox, combobox</li>
+								<p>Veja o exemplo abaixo:</p>
+								<form>  
+								Escolha seu nível de daw: <select name="cars"> 
+													<option value="daw">Daw</option>
+													<option value="sdaw">Semi-daw</option>
+													<option value="kank">Kank</option>   
+													<option value="skank">Semi-kank</option> 
+												 </select> 
+							 	</form>
+						 	<li>Fieldset: permite o agrupamento de elementos do formulário em seções</li>
+					 			<p>Vamos mostrar o funcionamento dessa tag agrupando 3 informações: nome, e-mail e data de nascimento. Veja abaixo:</p>
+					 			<form> 
+					 				<fieldset>  
+						 				<legend>Informações pessoais:</legend>  
+						 				Nome: <input type="text" size="30"><br>  
+						 				E-mail: <input type="text" size="30"><br>  
+						 				Data de nascimento: <input type="text" size="10"> 
+					 				</fieldset> 
+				 				</form>
+			 				<li>Textarea: tag que permite entrada de texto em um bloco com mais de uma linha.</li>
+			 					<p>Exemplo:</p>
+			 					<textarea rows="5" cols="60">Você não precisa mais escrever em uma simples linha. Com a tag "textarea" você pode escrever em várias linhas a mesma informação!</textarea>
+
+						</ul>
+						<li><a name="multimedia"/>Elementos multimedia: tags que permitem inserir elementos multimedia na página</li>
+						<ul>
+							<li>Link: tag usada para referenciar outros documentos da web</li>
+								<p>Isso é um link para o <a href="http://google.com" target="_blank">Google</a>!</p>
+							<li>Imagem: Usada para inserir imagens na página</li>
+								<p>Veja este lindo pato de borracha!</p>
+								<img style="width: 150px; height: 150px" src="http://caputconsultoria.com.br/site_temp/wp-content/uploads/2013/10/sindrome-pato.jpg"/>
+								<p>Usamos a tag "img" para adicioná-lo.</p>
+							<li>iFrames: Carrega o conteúdo de uma página toda dentro do elemento</li>
+								<p>Veja o exemplo onde usamos a página do portal UOL</p>
+								<iframe style="width: 500px; height: 500px" src="http://www.uol.com.br"></iframe>
+						</ul>
+					</ul>
+					<a href="#intro">Teste</a>
+					<footer style="border: 3px solid black"><a name="bibliografica"/> 
+						<p>Desenvolvido por: Marcelo Medeiros de Lima</p>  
+						<p>Contato:   
+							<a href="mailto:marcelolima381@gmail.com">marcelolima381@gmail.com</a>.  
+						</p>
+					</footer>
+		</body>
+	</html>
