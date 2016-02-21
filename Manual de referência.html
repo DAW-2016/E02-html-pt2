@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html>
+
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>Manual de referência</title>
+    </head>
+
+
+    <body>
+
+        <header>
+
+            <h1>Manual de referência</h1>
+            <h2>Indice</h2>
+            <ul>
+                <li>
+                    <a href="#intro">HTML: introdução e estrutura básica</a>
+                </li>
+                <li>
+                    <a href="#pricipaisElementos">HTML: Principais elementos</br></a>
+                    <ul>
+                        <li>
+                            <a href="#elementosTexto"> Elementos de texto </a>
+                        </li>
+                        <li>
+                            <a href="#elementosContainers">Elementos Containers</a>
+                        </li>
+                        <li>
+                            <a href="#elementosMultimedia">Elementos multimedia</a>
+                        </li>
+                        <li>
+                            <a href="#elementosFormularios">Elementos Formulários</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#referencias"> Referência bibliográfica</a>
+                </li>
+
+            </ul>
+        </header>
+
+    <!--&lt; &gt;-->
+        <div id="elementosBasicos">
+
+            <h3>HTML: introdução e estrutura básica</h3>
+            <p>
+                Uma pagina basica html possui as seguintes Tags:
+            </p>
+            <ul>
+                <li>&lt;!DOCTYPE html&gt;: Versão do documento HTML</li>
+                <li>&lt;html&gt;&lt;/html&gt;: delimita a página HTML</li>
+                <li>&lt;head&gt;&lt;/head&gt;: Cabeçalho da página. Contém informações de configuração da página</li>
+                <li>&lt;body&gt;&lt;/body&gt;: Corpo da página. Contém toda informação que será exibida para o funcionário</li>
+            </ul>
+        </div>
+
+
+
+        <h3 id="pricipaisElementos">HTML: Principais elementos</h3>
+        <ul>
+            <li>
+                <div id="elementosTexto">
+                    <h2>Elementos de Texto</h2>
+                    <p><strong>Headings:</strong>Utilizado para definir títulos, subtítulos, seções, etc.</p>
+                    <p>Exemplos:</p>
+                    <h1>Titulo com h1</h1>
+                    <h2>Subtitulo com h2</h2>
+                    <h3>Subtitulo do Subtitulo com h3</h3>
+                    <h4>Subtitulo do Subtitulo do Subtitulo com h4</h4>
+                    <h5>............................ com h5</h5>
+                    <h6>......................................? com h6</h6>
+
+
+                    <p><strong>Paragrafos: </strong>Utilizado para estrutura grandes blocos de texto.</p>
+                    <p>Exemplos:</p>
+                    <p>O vídeo fornece uma maneira poderosa de ajudá-lo a provar seu argumento. Ao clicar em Vídeo Online, você pode colar o código de inserção do vídeo que deseja adicionar.
+                        Você também pode digitar uma palavra-chave para pesquisar online o vídeo mais adequado ao seu documento. Para dar ao documento uma aparência profissional, o Word
+                        fornece designs de cabeçalho, rodapé, folha de rosto e caixa de texto que se complementam entre si. Por exemplo, você pode adicionar uma folha de rosto, um
+                        cabeçalho e uma barra lateral correspondentes. Clique em Inserir e escolha os elementos desejados nas diferentes galerias.</p>
+
+                    <p>Temas e estilos também ajudam a manter seu documento coordenado. Quando você clica em Design e escolhe um novo tema, as imagens, gráficos e elementos gráficos
+                        SmartArt são alterados para corresponder ao novo tema. Quando você aplica estilos, os títulos são alterados para coincidir com o novo tema. Economize tempo no Word
+                        com novos botões que são mostrados no local em que você precisa deles. Para alterar a maneira como uma imagem se ajusta ao seu documento, clique nela e um botão de
+                        opções de layout será exibido ao lado. Ao trabalhar em uma tabela, clique no local onde deseja adicionar uma linha ou uma coluna e clique no sinal de adição.</p>
+
+                    <p><strong>Formatação: </strong>Oferece diferentes aspectos a um trecho de texto.</p>
+                    <p>Exemplos:</p>
+                    <b>Frase em negrito<br/></b>
+                    <strong>Frase Strong!!<br/></strong>
+                    <i>Texto em italico<br/></i>
+                    <em>Enfatizando essa frase<br/></em>
+                    <code>System.out.println("???")<br/></code>
+                    <p>x<sub>2</sub>  x<sup>2</sup></p>
+
+                    <p><strong>Listas: </strong>Utilizado para enumerar informações.</p>
+                    <p>Exemplos:</p>
+                    <ol>
+                        <li>q1</li>
+                        <li>q2</li>
+                        <li>q3</li>
+                    </ol>
+
+
+                    <ul>
+                        <li>21</li>
+                        <li>88</li>
+                        <li>48</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div id="elementosContainers">
+                    <h2>Elementos Containers:</h2>
+                    <p><strong>Divs :</strong>tag utilizada para agrupar elementos.</p>
+                    <p>Exemplos:</p>
+                    <div id="primeira" style="background-color:red;width:20%;">
+
+                        <p>Testando a div</p>
+                    </div>
+
+                    <p><strong>header & footer :</strong>divs para serem usadas em ocasiões especiais.</p>
+                    <p>Exemplos:</p>
+                    <header>
+                        <h1>Página Principal</h1>
+                    </header>
+                    <footer>
+                        <p>Desenvolvido por: ACME Corporation</p>
+                        <p>Contato:<a href="mailto:contato@acme.com">contato@acme.com</a>.</p>
+                    </footer>
+
+                </div>
+            </li>
+            <li>
+                <div id="elementosMultimedia">
+                    <h2>Elementos Multimedia:</h2>
+                    <p><strong>link:</strong> adionando links na pagina.</p>
+                    <p>Exemplos:</p>
+                    <a href="https://www.google.com.br/" target="_blank">Google</a>
+                    <a href="https://www.google.com.br/" target="_parent">Google</a>
+                    <a href="https://www.google.com.br/" target="_self">Google</a>
+                    <a href="https://www.google.com.br/" target="_top">Google</a>
+
+                    <p><strong>Imagens:</strong> adionando imagens na pagina.</p>
+                    <p>Exemplos:</p>
+                    <br/><img src="https://www.insidescience.org/sites/default/files/interstellar-top_0.jpg" alt="bug"/>
+                    <p><strong>iframe:</strong>adionando conteúdo de outra pagina.</p>
+                    <p>Exemplos:</p>
+                    <br/><iframe src="http://www.w3schools.com/tags/tag_iframe.asp" width="500" height="500"></iframe>
+
+                </div>
+            </li>
+            <li>
+                <div id="elementosFormularios">
+                    <h2>Elementos de Formularios</h2>
+                    <p><strong>Estrutura básica:</strong></p>
+                    <form>
+                        Username: <input type="text" name="username"> <br>
+                        Password: <input type="password" name=“pwd"> <br>
+                        <input type="submit" value="Log in">
+                    </form>
+                    <br>
+                    <br>
+                    <p><strong>input:</strong></p>
+                    <form>
+                        Username: <input type="text" name="username">
+                        Password: <input type="password" name="pwd">
+                        Sex: <input type="radio" name="sex" value="male">Male</input>
+                        <input type="radio" name="sex" value="female">Female</input>
+                        Vehicles: <input type="checkbox" name="vehicle" value="bike">Bike</input>
+                        <input type="checkbox" name="vehicle" value="motocycle">Motocycle</input>
+                        <input type="checkbox" name="vehicle" value="car">Car</input>
+                        <input type="submit" value="Enviar">
+                    </form>
+                    <br>
+                    <br>
+                    <p><strong>select:</strong></p>
+                    <form>  Choose an option:
+                        <select name="cars">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="fiat">Fiat</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </form>
+                    <br>
+                    <br>
+                    <p><strong>fieldset:</strong></p>
+                    <form>
+                        <fieldset>
+                            <legend>Personal information:</legend>
+                            Name: <input type="text" size="30"><br>
+                            E-mail: <input type="text" size="30"><br>
+                            Date of birth: <input type="text" size="10">
+                        </fieldset>
+                    </form>
+
+                </div>
+
+                <div id="referencias">
+                    <p>Referência bibliografica: Mateiral de DAW </p>
+                </div>
+            </li>
+        </ul>
+    </body>
+</html>
