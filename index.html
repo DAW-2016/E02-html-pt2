@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Referências HTML</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Referênia de elementos HTML">
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:#436F41; border-color:black">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"></button>
+        <a href="#myCarousel" class="navbar-brand">HTML e seus elementos</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse" style="float: right;">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#htmlwhat">Intro</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Texto<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#texto-h">Header</a></li>
+              <li><a href="#texto-p">Parágrafo</a></li>
+              <li><a href="#texto-l">Lista</a></li>
+              <li><a href="#texto-b">Negrito/Itálico</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#containers">Containers</a>
+          </li>
+          <li>
+            <a href="#forms">Forms</a>
+          </li>
+          <li>
+            <a href="#media">Multimídia</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div style="max-width:80%;margin: 0 auto;">
+    <div class="jumbotron" style="padding-top:60px;">
+      <h1 id="htmlwhat">HTML Whaaat?</h1>
+      <p>HTML (abreviação para a expressão inglesa HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto) é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.</p>
+    </div>
+    <h2>Elementos de Texto</h2>
+    <div class="panel-group" style="font-size:125%;">
+      <div class="panel panel-default">
+        <div class="panel-heading">Headings</div>
+        <div class="panel-body">Utilizado para títulos, subtítulos e seções.</div>
+        <div class="well well-sm">&lth1&gt Algum título &lt/h1&gt</div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">Parágrafos</div>
+        <div class="panel-body">Utilizado para blocos de texto comuns.</div>
+        <div class="well well-sm">&ltp&gt Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. &lt/p&gt</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js" ></script>
+</body>
