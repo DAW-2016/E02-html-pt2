@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <title>Aula 2</title>
+    </head>
+
+    <body>
+    	<p class="SupraTitulo">Manual de referências para HTML</p>
+		<div id="indice">
+        	<ul>
+				<li><a class="indice" href="#intro">HTML: Introdução e estrutura básica</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li><a class="indice" href="#texto">Elementos de texto</a></li>
+				<li><a class="indice" href="#containers">Elementos containers</a></li>
+				<li><a class="indice" href="#formularios">Elementos formulários</a></li>
+				<li><a class="indice" href="#multimedia">Elementos multimedia</a></li>
+				<li><a class="indice" href="#referencias">Referências bibliográficas</a></li>
+			</ul>
+        </div>
+        
+    	<div class="bodyCenter">
+        	<a name="intro"/>
+			<p class="titulo">HTML: introdução e estrutura básica</p>
+			<p>HTML significa: HyperText Markup Language. HTML é uma linguagem voltada para marcação/estruturação de documentos da web.
+			Existem vários recursos para cada tipo de coisa que se deseja criar em HTML. Os recursos para a demarcação do hipertexto nós chamamos
+            de tags. As tags funcionam como funções pre-definidas para estruturar nossa pagina na web de forma organizada: título, cabeçalho, corpo do
+            texto, barra de pesquisas, listas. Toda tag é composta de nome, atributos e valor, como no exemplo: <a href="http://www.google.com" target
+            ="_blank">Clique aqui</a> (Clique com o botão direito sobre o link e em seguida clique em inspecionar elemento para identificar a sintaxe
+            da tag).</p>
+		</div>
+
+    	<div class="bodyCenter">
+        	<a name="texto"/>
+			<p class="titulo">Elementos de texto</p>
+			<p>						
+            	<ul>
+					<li>Headings: Utilizado para definir títulos, subtítulos e seções.</li>
+						<p>Exemplo: "h1","h2","h3"... "h6". Veja abaixo:</p>
+						<h1>h1</h1>
+						<h2>h2</h2>
+						<h3>h3</h3>
+					
+                    <li>Parágrafos: estrutura que armazena grandes blocos de texto. Veja: </li>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida ante id diam sagittis, faucibus consectetur enim blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris non volutpat mauris, non faucibus arcu. Ut laoreet dignissim enim. Cras venenatis laoreet semper. Cras vitae odio at massa rutrum porttitor. Proin suscipit semper convallis. Fusce hendrerit tempus lacus, ac sollicitudin urna laoreet nec. Donec suscipit mauris at justo molestie rutrum. Donec quis nisi eget risus tempus ultrices vel tristique nunc. Proin feugiat turpis nec magna consequat, nec porttitor mi condimentum. Vivamus cursus tellus augue, eget fermentum dolor mattis ut. Suspendisse vel congue nunc. Nullam turpis urna, sollicitudin eu lorem eu, facilisis eleifend ex.</p>
+					
+                    <li>Formatação: oferece diferentes aspectos para um texto, como deixá-lo negrito ou itálico.</li>
+						<p><em>Lorem ipsum</em> dolor sit amet, consectetur adipiscing elit. Vivamus gravida ante id diam sagittis, faucibus consectetur enim blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris non volutpat mauris, non faucibus arcu. Ut laoreet dignissim enim. <strong>Cras venenatis laoreet semper</strong>. Cras vitae odio at massa rutrum porttitor. Proin suscipit semper convallis. Fusce hendrerit tempus lacus, ac sollicitudin urna laoreet nec. <em>Donec suscipit mauris at justo molestie rutrum. Donec quis nisi eget risus tempus ultrices vel tristique nunc.</em> Proin feugiat turpis nec magna consequat, nec porttitor mi condimentum. Vivamus cursus tellus augue, eget fermentum dolor mattis ut. <strong>Suspendisse vel congue nunc. Nullam turpis urna, sollicitudin eu lorem eu, facilisis eleifend ex.</strong></p>
+					
+                    <li>Listas: Como o próprio nome já diz a lista tem a função de listar/enumerar as coisas de forma ordenada ou não ordenada. A própria estrutura dessa secção foi feita usando uma lista.</li>
+						<p>Exemplo: "ol","ul". Veja abaixo:</p>	
+                        	<ol>
+								<li>primeiro</li>
+								<li>segundo</li>
+								<li>terceiro</li>
+								<li>quarto</li>
+							</ol>
+						<br/>
+                        	<ul>
+								<li>algum ae</li>
+								<li>sla</li>
+								<li>Não faz diferença</li>
+								<li>oi</li>
+							</ul>			
+				</ul>
+			</p>
+		</div>
+
+		<div class="bodyCenter"><a name="containers"/>
+			<p class="titulo">Elemento de containers<p/>
+    	    	<ul>
+					<li>Head: Cabeçalho onde são armazenadas informações da página.</li>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;Exemplo: title, css, meta...</p>
+					<li>Body: O corpo do HTML. Dentro dele se encontra todo o conteúdo da página.</li>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;Exemplo: Tags como p, h1, h2, ol, ul... Todas são usadas dentro do "body".</p>
+					<li>Div: Tag usada para agrupar elementos em um espaço determinado</li>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;Exemplo: Veja o exemplo do uso de divs abaixo.</p>
+                    <li>Header e Footer: divs usadas em ocasiões especiais que preenchem o cabeçalho e o rodapé da página, respectivamente</li>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;O título desta página (Manual de referência para HTML) poderia estar entre a tag header.</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;No final da página temos o rodapé feito com a tag footer.</p>				
+				</ul>
+        </div>
+
+        <div class="bodyCenter"><a name="formularios"/>
+			<p class="titulo">Formulários</p>
+	    		<ul>
+                    <li>Textarea: tag que permite entrada de texto em um bloco com mais de uma linha.</li>
+			 			<p>Exemplo:</p>
+			 			<textarea rows="5" cols="60">Isso é um local da tag "textarea"</textarea>
+					<br/><br/>
+                    <li>Input: texto, senhas, checkbox, radio buttons, botão submit e botão reset</li>
+						<p>Exemplo:</p>
+						<form> 
+						Username: <input type="text" name="Login"/><br/><br/>
+						Password:&nbsp; <input type="password" name="Senha"/><br/><br/>   
+						<input type="submit" value="Entrar"/>
+						</form>
+						<br/><br/>
+                    <li>Select: listbox</li>
+						<p>Exemplo:</p>
+						<form>  
+						Selecione seu kek:
+                        <select name="cars"> 
+                            <option value="muitoGrande">Muito grande</option>
+                            <option value="enorme">Enorme</option>
+                            <option value="colossal">Colossal</option>   
+                            <option value="brontossaurico">Brontossaurico</option> 
+                        </select> 
+						</form>
+						<br/><br/>
+                    <li>Fieldset: permite o agrupamento de elementos do formulário em seções</li>
+					 	<p>Vamos mostrar o funcionamento dessa tag agrupando 3 informações: nome, e-mail e data de nascimento. Exemplo:</p>
+					 	<form> 
+					 	<fieldset>  
+                            <legend>Informações pessoais:</legend>  
+                            Nome: <input type="text" size="30"><br/><br/>
+                            E-mail: <input type="text" size="30"><br/><br/>
+                            Data de nascimento: <input type="text" size="10"><br/> 
+                            </fieldset> 
+				 		</form>
+                 </ul>
+        </div>
+		
+        <div class="bodyCenter">
+        	<p class="titulo"><a name="multimedia"/>Elementos multimedia</p>
+				<ul>
+					<li>Link: tag usada para referenciar outros documentos da web</li>
+						<p>Isso é um link para o <a href="http://facebook.com" target="_blank">Facebook</a>!</p>
+					<li>Imagem: Usada para inserir imagens na página</li>
+						<p>Melhor prof do mundo!</p>
+						<img style="width: 150px; height: 150px" src="https://avatars1.githubusercontent.com/u/2938221?v=3&s=400"/>
+						<p>Usamos a tag "img" para adicioná-lo.</p>
+					<li>iFrames: Carrega o conteúdo de uma página toda dentro do elemento</li>
+						<p>Veja o exemplo onde usamos a página do portal UOL</p>
+						<iframe style="width: 800px; height: 500px" src="http://globoesporte.globo.com/futebol/times/atletico-mg/"></iframe>
+				</ul>
+        </div>
+        
+        <div class="bodyCenter">
+        	<p class="titulo"><a name="referencias"/>Referências bibliográficas</p>
+            <ul>
+            	<li>http://www.w3schools.com/colors/colors_picker.asp</li>
+                <li>https://www.dropbox.com/sh/tevu0ak7j9523n4/AABXRN-ys8x05fspBBdXvpOTa/04_css_intro.pdf?dl=0</li>
+                <li>http://br.lipsum.com/</li>
+                <li>http://www.w3schools.com/css/css_positioning.asp</li>
+            </ul>
+        </div>
+        
+    	<div class="footBar">
+       		<strong>Desenvolvedor</strong>: Alan Borges Martins Bispo.<br/>
+            <strong>GitHub</strong>: abmBispo.
+        </div>
+    </body>
+
+</html>
