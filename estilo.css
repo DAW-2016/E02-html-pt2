@@ -1,0 +1,38 @@
+#header {
+	width: 80%;
+	height: 100px;
+	margin: 20px auto;
+  background: #5EDCE2;
+  color: white;
+  text-align: center;
+}
+#body {
+  background: #0F858B;
+  font-family: "arial", Georgia, Serif;
+}
+#painelgeral {
+	width: 80%;
+	height: 800px;
+	margin: 0 auto;
+	background: #5EDCE2;
+  text-align: justify;
+}
+#sidePanel {
+  background: #0590E0;
+  width:30%;
+  margin: 30px 15px auto;
+}
+#heman
+{
+  background: #F45FC2;
+  width: 20%;
+  margin: 30px 15px auto;
+}
+
+#footer {
+	width: 80%;
+	height: 50px;
+	margin: 10 auto;
+  text-align: center;
+  background: #5EDCE2;
+}
