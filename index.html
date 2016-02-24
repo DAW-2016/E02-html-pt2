@@ -5,17 +5,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Referênia de elementos HTML">
+  <meta name="description" content="Referência de elementos HTML">
   <link rel="stylesheet" href="css/bootstrap.css">
-
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:#436F41; border-color:black">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"></button>
-        <a href="#myCarousel" class="navbar-brand">HTML e seus elementos</a>
+        <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed">
+          <span class="sr-only">Alt. Navegação</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand">HTML e seus elementos</a>
       </div>
       <div id="navbar" class="collapse navbar-collapse" style="float: right;">
         <ul class="nav navbar-nav">
@@ -23,22 +27,39 @@
             <a href="#htmlwhat">Intro</a>
           </li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Texto<span class="caret"></span></a>
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Texto<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#texto-h">Header</a></li>
+              <li><a href="#texto-h">Heading</a></li>
               <li><a href="#texto-p">Parágrafo</a></li>
               <li><a href="#texto-l">Lista</a></li>
-              <li><a href="#texto-b">Negrito/Itálico</a></li>
+              <li><a href="#texto-f">Negrito/Itálico</a></li>
             </ul>
           </li>
-          <li>
-            <a href="#containers">Containers</a>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Container<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#container-h">Header</a></li>
+              <li><a href="#container-b">Corpo</a></li>
+              <li><a href="#container-d">Divs</a></li>
+              <li><a href="#container-f">Footer</a></li>
+            </ul>
           </li>
-          <li>
-            <a href="#forms">Forms</a>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Formulários<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#form-i">Input</a></li>
+              <li><a href="#form-s">Select</a></li>
+              <li><a href="#form-f">Fieldset</a></li>
+              <li><a href="#form-t">Textarea</a></li>
+            </ul>
           </li>
-          <li>
-            <a href="#media">Multimídia</a>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Multimídia<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#multi-l">Link</a></li>
+              <li><a href="#multi-i">Imagem</a></li>
+              <li><a href="#multi-f">iFrame</a></li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -46,24 +67,156 @@
   </nav>
 
   <div style="max-width:80%;margin: 0 auto;">
-    <div class="jumbotron" style="padding-top:60px;">
-      <h1 id="htmlwhat">HTML Whaaat?</h1>
+    <div class="jumbotron" style="padding-top:60px;" id="htmlwhat">
+      <h1>HTML Whaaat?</h1>
       <p>HTML (abreviação para a expressão inglesa HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto) é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.</p>
     </div>
     <h2>Elementos de Texto</h2>
-    <div class="panel-group" style="font-size:125%;">
-      <div class="panel panel-default">
+    <div class="panel-group">
+      <div class="panel panel-default" id="texto-h">
         <div class="panel-heading">Headings</div>
         <div class="panel-body">Utilizado para títulos, subtítulos e seções.</div>
         <div class="well well-sm">&lth1&gt Algum título &lt/h1&gt</div>
       </div>
-      <div class="panel panel-default">
+      <div class="panel panel-default" id="texto-p">
         <div class="panel-heading">Parágrafos</div>
         <div class="panel-body">Utilizado para blocos de texto comuns.</div>
         <div class="well well-sm">&ltp&gt Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. &lt/p&gt</div>
       </div>
+      <div class="panel panel-default" id="texto-l">
+        <div class="panel-heading">Listas</div>
+        <div class="panel-body">Usada para listar/enumerar itens de forma numerada ou não.</div>
+        <div class="well well-sm">
+          &ltol&gt<br>
+					<tab>&ltli&gtOrdenada&lt/li&gt<br>
+					<tab>&ltli&gtOrdenada&lt/li&gt<br>
+					<tab>&ltli&gtOrdenada&lt/li&gt<br>
+					<tab>&ltli&gtOrdenada&lt/li&gt<br>
+					&lt/ol&gt
+        </div>
+      </div>
+      <div class="panel panel-default" id="texto-f">
+        <div class="panel-heading">Formatações</div>
+        <div class="panel-body">Uma forma de incluir texto sublinhado, negrito e etc.</div>
+        <div class="well well-sm">&ltstrong&gt Negrito &lt/strong&gt<br>
+          &ltem&gt Negrito &lt/em&gt
+        </div>
+      </div>
     </div>
-  </div>
+    <h2>Containers</h2>
+    <div class="panel-group">
+      <div class="panel panel-default" id="container-h">
+        <div class="panel-heading">Header</div>
+        <div class="panel-body">Cabeçalho onde são armazenadas informações da página.</div>
+        <div class="well well-sm">&lthead&gt<br>
+            <tab>&lttitle&gtReferências HTML&lt/title&gt<br>
+            <tab>&ltmeta charset=&quotutf-8&quot&ht<br>
+            <tab>&ltmeta http-equiv=&quotX-UA-Compatible&quot content=&quotIE=edge&quot&gt<br>
+            <tab>&ltmeta name=&quotviewport&quot content=&quotwidth=device-width, initial-scale=1.0"&gt<br>
+            <tab>&ltmeta name=&quotdescription&quot content="Referência de elementos HTML"&gt<br>
+            <tab>&ltlink rel=&quotstylesheet&quot href=&quotcss/bootstrap.css&quot&gt<br>
+          &lt/head&gt
+        </div>
+      </div>
+      <div class="panel panel-default" id="container-b">
+        <div class="panel-heading">Corpo</div>
+        <div class="panel-body">Onde o conteúdo visível do seu site vai.</div>
+        <div class="well well-sm">&ltbody&gt<br>
+          <tab>&lth2&gt Coisas... &lt/h2&gt<br>
+          &lt/body&gt
+        </div>
+      </div>
+      <div class="panel panel-default" id="container-d">
+        <div class="panel-heading">Divs</div>
+        <div class="panel-body">Tag usada para agrupar elementos em um espaço.</div>
+        <div class="well well-sm">&ltdiv&gt<br>
+          <tab>&lth2&gtCoisas...&lt/h2&gt<br>
+          <tab>&ltp&gtConteúdos...&lt/p&gt<br>
+          &lt/div&gt
+        </div>
+      </div>
+      <div class="panel panel-default" id="container-f">
+        <div class="panel-heading">Footer</div>
+        <div class="panel-body">Um rodapé para a página, geralmente com informações de contato e copyright.</div>
+        <div class="well well-sm">
+          &ltfooter&gt<br>
+            <tab>&ltaddress&gt<br>
+              <tab><tab>Escrito por &lta href=&quotmailto:webmaster@example.com&quot>Jon Doe&lt/a&gt&ltbr&gt<br>
+              <tab><tab>Visite-me em:&ltbr&gt<br>
+              <tab><tab>Example.com&ltbr&gt<br>
+              <tab><tab>Box 564, Disneyland&ltbr&gt<br>
+            <tab>&lt/address&gt<br>
+          &lt/footer&gt
+        </div>
+      </div>
+      <h2>Formulários</h2>
+      <div class="panel-group">
+        <div class="panel panel-default" id="form-i">
+          <div class="panel-heading">Input</div>
+          <div class="panel-body">Entrada de texto de uma linha.</div>
+          <div class="well well-sm">
+            &ltinput type=&quottext&quot name=&quotLogin&quot/&gt<br>
+            &ltinput type=&quotpassword&quot name=&quotSenha&quot/&gt<br>
+            &ltinput type=&quotsubmit&quot value=&quotEntrar&quot/&gt
+          </div>
+        </div>
+        <div class="panel panel-default" id="form-s">
+          <div class="panel-heading">Select</div>
+          <div class="panel-body">Permite ao usuário escolher entre opções em um menu dropdown.</div>
+          <div class="well well-sm">
+              &ltselect name="keks"&gt<br>
+  							<tab>&ltoption value=&quotdaw&quot&gtDaw&lt/option&gt<br>
+  							<tab>&ltoption value=&quotdaw-s&quot&gtKek&lt/option&gt<br>
+  							<tab>&ltoption value=&quotkank&quot&gtKank&lt/option&gt<br>
+  							<tab>&ltoption value=&quotskank&quot&gtOlivier&lt/option&gt<br>
+							&lt/select&gt<br>
+          </div>
+        </div>
+        <div class="panel panel-default" id="form-f">
+          <div class="panel-heading">Fieldset</div>
+          <div class="panel-body">Agrupa elementos de formulário.</div>
+          <div class="well well-sm">
+            &ltfieldset&gt<br>
+            <tab>&ltlegend&gt Múltiplas informações pessoais:&lt/legend&gt<br>
+            <tab>~forms~<br>
+            &lt/fieldset&gt
+          </div>
+        </div>
+        <div class="panel panel-default" id="form-t">
+          <div class="panel-heading">Textarea</div>
+          <div class="panel-body">Input de várias linhas.</div>
+          <div class="well well-sm">
+            &lttextarea rows=&quot3" cols=&quot60&quot&gt<br>
+            <tab>Você não precisa mais escrever em uma simples linha.<br>
+            <tab>Com a tag "textarea" você pode escrever em várias linhas a mesma informação!<br>
+            &lt/textarea&gt
+          </div>
+        </div>
+      </div>
+      <h2>Multimídia</h2>
+      <div class="panel-group">
+        <div class="panel panel-default" id="multi-l">
+          <div class="panel-heading">Link</div>
+          <div class="panel-body">Aponta para outro endereço web.</div>
+          <div class="well well-sm">
+            &lta href=&quothttp://google.com&quot>Google&lt/a&gt
+          </div>
+        </div>
+        <div class="panel panel-default" id="multi-i">
+          <div class="panel-heading">Imagem</div>
+          <div class="panel-body">Mostra uma imagem.</div>
+          <div class="well well-sm" style="padding-left: 0.5em">
+            &ltimg href=&quothttps://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Apollo_17_The_Last_Moon_Shot_Edit1.jpg/301px-Apollo_17_The_Last_Moon_Shot_Edit1.jpg&quot&gt
+          </div>
+        </div>
+        <div class="panel panel-default" id="multi-f">
+          <div class="panel-heading">iFrame</div>
+          <div class="panel-body">Abre uma janela em outro página web.</div>
+          <div class="well well-sm">
+            &ltiframe src=&quothttps://www.ariel.santos.nom.br/&quot&gt&lt/iframe&gt
+          </div>
+      </div>
+    </div>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js" ></script>
